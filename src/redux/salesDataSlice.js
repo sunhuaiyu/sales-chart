@@ -4,6 +4,7 @@ const initialState = [
   { product: 'Product A', sales: 50 },
   { product: 'Product B', sales: 75 },
   { product: 'Product C', sales: 100 },
+  { product: 'Product D', sales: 120 },
 ];
 
 const salesDataSlice = createSlice({

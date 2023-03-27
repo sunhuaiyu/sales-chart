@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.form-container {
+  text-align: left; 
+  max-width: 600px;
+  margin-left: 8px;
+}
+
+.form-container input,
+.form-container button {
+  margin-right: 8px;
+}

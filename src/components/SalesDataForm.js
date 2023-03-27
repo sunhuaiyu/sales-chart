@@ -14,9 +14,9 @@ const SalesDataForm = () => {
     const existingProduct = salesData.find((item) => item.product === product);
 
     if (existingProduct) {
-      dispatch(updateSalesData({product, sales: Number(sales)}));
+      dispatch(updateSalesData({ product, sales: Number(sales) }));
     } else {
-      dispatch(addProduct({product, sales: Number(sales)}));
+      dispatch(addProduct({ product, sales: Number(sales) }));
     }
 
     setProduct('');
@@ -24,21 +24,23 @@ const SalesDataForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Product"
-        value={product}
-        onChange={(e) => setProduct(e.target.value)}
-      />
-      <input
-        type="number"
-        placeholder="Sales"
-        value={sales}
-        onChange={(e) => setSales(e.target.value)}
-      />
-      <button type="submit">Add/Update Sales Data</button>
-    </form>
+    <div className='form-container'>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Product"
+          value={product}
+          onChange={(e) => setProduct(e.target.value)}
+        />
+        <input
+          type="number"
+          placeholder="Sales"
+          value={sales}
+          onChange={(e) => setSales(e.target.value)}
+        />
+        <button type="submit">Add/Update Sales Data</button>
+      </form>
+    </div>
   );
 };
 

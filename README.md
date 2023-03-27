@@ -1,3 +1,12 @@
+## Introduction
+
+This is a simple data visualization dashboard with reactjs, redux, and react-plotly, created with the help of ChatGPT-4. The dashboard will display a bar chart representing sales data for different products. Users can update either the sales data of existing product or add new product with sales data, and the chart will update accordingly.
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
